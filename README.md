@@ -15,7 +15,31 @@ El proyecto está organizado de la siguiente manera:
 Para comenzar, clona este repositorio a tu máquina local:
 
 ```bash
-git clone https://github.com/tuusuario/pentest-bash-tools.git
-cd pentest-bash-tools
+git clone https://github.com/Kl3lCrypt/BashPenTools
+cd BashPenTools
+```
+## Requisitos
 
+Todos los script de este proyecto estaran porgramados en bash, lo que hace indispensáble su disponibilidad.
 
+## Usos
+
+Aquí mostramos algunos usos de estos script:
+
+DecodeBrainFuck
+```bash
+[+] Uso: ./auxiliar/DecodeBrainFuck.sh <archivo.bf>
+```
+DecodeRecursiveBase64
+```bash
+[+] Uso: ./auxiliar/DecodeRecursiveBase64.sh <file_encode>
+```
+PortScan
+```bash
+[+] Uso: ./reconocimiento/PortScan.sh
+```
+## Advertencia Legal
+
+**Este proyecto está destinado únicamente a fines educativos y de investigación en entornos autorizados.** No se debe usar ninguna de las herramientas o scripts contenidos en este repositorio en sistemas, redes o dispositivos para los que no se tenga explícito consentimiento.
+
+El uso no autorizado de estas herramientas en sistemas ajenos es **ilegal** y está prohibido. El autor de este repositorio no se hace responsable de ningún daño, pérdida de datos, o cualquier consecuencia derivada del uso indebido de estas herramientas.
