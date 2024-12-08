@@ -16,7 +16,7 @@ Para comenzar, clona este repositorio a tu máquina local:
 
 ```bash
 git clone https://github.com/Kl3lCrypt/BashPentools
-cd BashPenTools
+cd BashPentools
 ```
 ## Requisitos
 
