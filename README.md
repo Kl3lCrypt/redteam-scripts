@@ -15,7 +15,7 @@ El proyecto está organizado de la siguiente manera:
 Para comenzar, clona este repositorio a tu máquina local:
 
 ```bash
-git clone https://github.com/Kl3lCrypt/BashPenTools
+git clone https://github.com/Kl3lCrypt/BashPentools
 cd BashPenTools
 ```
 ## Requisitos
