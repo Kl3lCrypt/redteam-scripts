@@ -28,7 +28,7 @@ def verificar_smtp(email, mx_host):
         return None
 
 # === Email a verificar ===
-email = "info@grupopapilio.es"
+email = "info@hacked.es"
 
 print(f"🔎 Verificando: {email}")
 
