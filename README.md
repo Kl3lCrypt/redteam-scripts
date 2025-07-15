@@ -29,17 +29,20 @@ Este proyecto es open source y se distribuye bajo la licencia [MIT](./LICENSE).
 
 ```bash
  $ bash network/scans/scan_hosts.sh
- $ bash exploitation/jwt_alg_none_exploit.sh```
+ $ bash exploitation/jwt_alg_none_exploit.sh
+```
 
 ### 🐍 Python
 
 ```bash
- $ python3 network/scans/scan_arp.py```
+ $ python3 network/scans/scan_arp.py
+```
 
 ✅ Asegúrate de tener los permisos de ejecución necesarios:
 
 ```bash
- $ chmod +x script.sh```
+ $ chmod +x script.sh
+```
 
 > Revisa cada script individualmente para entender su comportamiento antes de ejecutarlo.
 
