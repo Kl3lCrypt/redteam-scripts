@@ -1,0 +1,37 @@
+# .gitignore
+
+# Archivos temporales del sistema/editor
+
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# __pycache__ y archvos de python compilados
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Entornos virtuales
+
+venv/
+env/
+
+# Archvios ocultos locales
+
+.DS_Store
+.idea/
+.vscode/
+
+# Archivos de resultados, escaneos o dumps.
+
+*.pcap
+*.xml
+*.nmap
+output/
+results/
+loot/
+

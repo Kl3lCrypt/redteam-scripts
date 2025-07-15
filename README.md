@@ -1,45 +1,98 @@
-# BashPentools
-Colección de scripts Bash para automatizar tareas en todas las etapas de un test de intrusión: reconocimiento, explotación y post-explotación. Diseñado para pentesters y estudiantes, estos scripts son ligeros, prácticos y creados durante retos en plataformas de ciberseguridad.
+# 🛠️ redteam-scripts
 
-## Estructura del Proyecto
+Este repositorio contiene una colección de scripts orientados a tareas de Red Team, pentesting y automatización de técnicas ofensivas. Incluye herramientas para reconocimiento de red, explotación de vulnerabilidades, validación de correos vía SMTP y utilidades varias.
 
-El proyecto está organizado de la siguiente manera:
+¡Bienvenido! Aquí encontrarás scripts para facilitar tus pruebas de seguridad y aprendizaje en Red Team.
 
-- **Reconocimiento**: Herramientas para descubrir servicios, escanear puertos, enumerar subdominios, etc.
-- **Explotación**: Scripts para realizar ataques y explotación de vulnerabilidades.
-- **Post-explotación**: Herramientas para la recolección de datos y mantenimiento del acceso.
-- **Auxiliar**: Herramientas generales que ayudan en varias etapas del pentesting.
+> ⚠️ Estos scripts están creados con fines educativos y deben usarse únicamente en entornos controlados o con autorización explícita.
 
-## Instalación
+Este proyecto es open source y se distribuye bajo la licencia [MIT](./LICENSE).
 
-Para comenzar, clona este repositorio a tu máquina local:
+---
+
+## 📁 Estructura del repositorio
 
 ```bash
-git clone https://github.com/Kl3lCrypt/BashPentools
-cd BashPentools
-```
-## Requisitos
+.
+├── exploitation/        # Scripts para Explotación de Vulnerabilidades
+├── network/             # Escaneos de Red (Hosts y Puertos)
+├── post-explotacion/    # Scripts orientados a Post-Explotación
+├── recon/               # Reconocimiento y Enumeración de Servicios
+├── utils/               # Scripts Auxiliares (Decodificadores, Herramientas Varias)
+├── tests/               # Pruebas y Scripts de Desarrollo
+└── README.md            # Este archivo```
 
-Todos los script de este proyecto estaran porgramados en bash, lo que hace indispensáble su disponibilidad.
+## 🚀 Ejecución rápida
 
-## Usos
+### 🐚 Bash
 
-Aquí mostramos algunos usos de estos script:
-
-DecodeBrainFuck
 ```bash
-[+] Uso: ./auxiliar/DecodeBrainFuck.sh <archivo.bf>
-```
-DecodeRecursiveBase64
-```bash
-[+] Uso: ./auxiliar/DecodeRecursiveBase64.sh <file_encode>
-```
-PortScan
-```bash
-[+] Uso: ./reconocimiento/PortScan.sh
-```
-## Advertencia Legal
+ $ bash network/scans/scan_hosts.sh
+ $ bash exploitation/jwt_alg_none_exploit.sh```
 
-**Este proyecto está destinado únicamente a fines educativos y de investigación en entornos autorizados.** No se debe usar ninguna de las herramientas o scripts contenidos en este repositorio en sistemas, redes o dispositivos para los que no se tenga explícito consentimiento.
+### 🐍 Python
 
-El uso no autorizado de estas herramientas en sistemas ajenos es **ilegal** y está prohibido. El autor de este repositorio no se hace responsable de ningún daño, pérdida de datos, o cualquier consecuencia derivada del uso indebido de estas herramientas.
+```bash
+ $ python3 network/scans/scan_arp.py```
+
+✅ Asegúrate de tener los permisos de ejecución necesarios:
+
+```bash
+ $ chmod +x script.sh```
+
+> Revisa cada script individualmente para entender su comportamiento antes de ejecutarlo.
+
+## ✨ Funcionalidades destacadas
+
+- 🖥️ **Escaneo de red**  
+  Scripts Bash y Python para descubrir hosts activos y puertos abiertos sin depender de herramientas externas.  
+  Más detalles y scripts en [`network/scans/README.md`](./network/scans/README.md)
+
+- 🐍 **Explotación de servicios**  
+  - Inyección SQL basada en tiempo (`exploitation/sql_time_based.py`)  
+  - Acceso anónimo por FTP (`exploitation/ftp_anon_login.py`)  
+  - Fuerza bruta de acceso Telnet sin contraseña (`exploitation/telnet_unauth_bruteforce.py`)  
+  - Explotación de JWT con `alg: none` (`exploitation/jwt_alg_none_exploit.sh`)
+
+- 📬 **Verificación de correos vía SMTP**  
+  Script para validar formato, obtener registros MX y probar entrega vía SMTP (`recon/smtp_email_verification.py`).
+
+- 🛠️ **Utilidades auxiliares**  
+  - Decodificador de Brainfuck (`utils/decode_brainfuck.sh`)  
+  - Decodificación recursiva de Base64 (`utils/decode_recursive_base64.sh`)  
+  - Descompresión automática de archivos anidados (`utils/descompress_recursive.sh`)
+  - Descifrado 3DES en modo CBC (`utils/decrypt_3des.py`)
+
+## 📦 Dependencias
+
+Este repositorio utiliza herramientas y módulos externos para ciertas funcionalidades. Asegúrate de tener instalados los siguientes requisitos generales:
+
+- `bash` (≥ 4.x)
+- `python3` (≥ 3.6)
+
+> 💡 Algunos scripts tienen dependencias adicionales específicas. Revisa el `README.md` de cada carpeta o el encabezado de cada script para más detalles.
+
+- [`exploitation`](./exploitation/README.md)
+- [`network/scans`](./network/scans/README.md)
+- [`recon`](./recon/README.md)
+- [`post-exploitation`](./post-exploitation/README.md)
+- [`utils`](./utils/README.md)
+
+## [!] Aviso Legal
+
+Este proyecto tiene fines educativos y está orientado a la práctica en entornos controlados y autorizados (como Hack The Box, TryHackMe, laboratorios propios, etc).
+
+El uso indebido de estas herramientas fuera de un marco legal puede ser ilegal.
+
+No me hago responsable del mal uso. Úsalo siempre con responsabilidad y ética profesional.
+
+## 🧠 Autor
+
+Desarrollado por **Kl3lCrypt**
+Apasionado de la ciberseguridad ofensiva · Red Team · Python · Linux
+
+## ⭐ ¿Te ha resultado útil?
+
+Si este repositorio te ha servido para aprender o practicar, considera darle una ⭐ para apoyarlo, o clónalo y sigue experimentando por tu cuenta.
+
+¡Gracias por pasarte por aquí! 🚀
