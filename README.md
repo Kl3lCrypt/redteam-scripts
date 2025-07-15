@@ -20,7 +20,8 @@ Este proyecto es open source y se distribuye bajo la licencia [MIT](./LICENSE).
 ├── recon/               # Reconocimiento y Enumeración de Servicios
 ├── utils/               # Scripts Auxiliares (Decodificadores, Herramientas Varias)
 ├── tests/               # Pruebas y Scripts de Desarrollo
-└── README.md            # Este archivo```
+└── README.md            # Este archivos
+```
 
 ## 🚀 Ejecución rápida
 
