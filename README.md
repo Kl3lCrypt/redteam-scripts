@@ -10,6 +10,7 @@ Este proyecto es open source y se distribuye bajo la licencia [MIT](./LICENSE).
 
 ---
 
+
 ## 📁 Estructura del repositorio
 
 ```bash
@@ -22,6 +23,7 @@ Este proyecto es open source y se distribuye bajo la licencia [MIT](./LICENSE).
 ├── tests/               # Pruebas y Scripts de Desarrollo
 └── README.md            # Este archivos
 ```
+
 
 ## 🚀 Ejecución rápida
 
@@ -46,6 +48,7 @@ Este proyecto es open source y se distribuye bajo la licencia [MIT](./LICENSE).
 
 > Revisa cada script individualmente para entender su comportamiento antes de ejecutarlo.
 
+
 ## ✨ Funcionalidades destacadas
 
 - 🖥️ **Escaneo de red**  
@@ -67,6 +70,7 @@ Este proyecto es open source y se distribuye bajo la licencia [MIT](./LICENSE).
   - Descompresión automática de archivos anidados (`utils/descompress_recursive.sh`)
   - Descifrado 3DES en modo CBC (`utils/decrypt_3des.py`)
 
+
 ## 📦 Dependencias
 
 Este repositorio utiliza herramientas y módulos externos para ciertas funcionalidades. Asegúrate de tener instalados los siguientes requisitos generales:
@@ -82,6 +86,7 @@ Este repositorio utiliza herramientas y módulos externos para ciertas funcional
 - [`post-exploitation`](./post-exploitation/README.md)
 - [`utils`](./utils/README.md)
 
+
 ## [!] Aviso Legal
 
 Este proyecto tiene fines educativos y está orientado a la práctica en entornos controlados y autorizados (como Hack The Box, TryHackMe, laboratorios propios, etc).
@@ -90,10 +95,12 @@ El uso indebido de estas herramientas fuera de un marco legal puede ser ilegal.
 
 No me hago responsable del mal uso. Úsalo siempre con responsabilidad y ética profesional.
 
+
 ## 🧠 Autor
 
 Desarrollado por **Kl3lCrypt**
 Apasionado de la ciberseguridad ofensiva · Red Team · Python · Linux
+
 
 ## ⭐ ¿Te ha resultado útil?
 
