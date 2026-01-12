@@ -4,9 +4,9 @@ import argparse
 from termcolor import colored
 
 def get_arguemnts():
-    parser = argparse.ArgumentParser(description="Script para crear nombres de usuaio personalizados.")
+    parser = argparse.ArgumentParser(description="Script para crear nombres de usuario personalizados.")
     parser.add_argument("-n", "--name", dest="name", required=True, help=" Nombre (Ex: Jhon Deep == Jhon)")
-    parser.add_argument("-l", "--last-name", dest="last_name", required=True, help=" Aplellido (Ex: Jhon Deep == Deep)")
+    parser.add_argument("-l", "--last-name", dest="last_name", required=True, help=" Apellido (Ex: Jhon Deep == Deep)")
 
     options = parser.parse_args()
 
@@ -50,7 +50,7 @@ def export_file(combinations):
     with open("users.txt", "w") as f:
         for comb in combinations:
             f.write(comb + "\n")
-
+    print(colored("\n[+] Exportando a archivo ./users.txt\n", "green"))
 
 def main():
     print(colored("\n[+] Creando lista de posibles nombres de usuario...\n", "green"))
